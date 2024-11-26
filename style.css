@@ -6,7 +6,12 @@
     font-style: normal
 }
 
-body {
+*{
     background-color: white;
     font-family: 'Avenir Next Condensed', Arial, sans-serif;
+}
+
+.nav_rechts{
+    font-size: larger;
+   
 }
