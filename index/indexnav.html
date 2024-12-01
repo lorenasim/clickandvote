@@ -5,18 +5,26 @@
 </head>
 <body>
     <nav>
-
-        <div class="menu_rechts">
-            &#9776; <!-- Unicode-Symbol für ein Burger-Menü -->
-        </div>
-            
-            <!--<ul class="nav_rechts">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Abstimmungen & Wahlen</a></li>
-                <li><a href="#">Über uns</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>-->
-
+        <title>Burger Icon</title>
+        <div class="burger" id="burger">&#9776;</div>
+        
+        <title>Dropdown Menu</title>
+        <ul class="menu" id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Abstimmungen & Wahlen</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
     </nav>
+
+    <script>
+        // JavaScript to toggle the menu
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('show'); 
+        });
+    </script>
 </body>
 </html>

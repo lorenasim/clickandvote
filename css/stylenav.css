@@ -1,25 +1,68 @@
-/*.nav_rechts{
-    display: flex;
-    color:aqua;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-
-}*/
-
-.menu_rechts{
-
-    font-size: 40px;
-    color: white;
-    background-color: #333; 
-    padding: 10px; 
-    cursor: pointer;
-    width:100%;
-    text-align:right;
+@font-face {
+    font-family: 'Avenir Next Condensed';
+    src: url('path-to-font-file.woff2') format('woff2'),
+         url('path-to-font-file.woff') format('woff');
 }
 
-/*
-.menu_rechts {
-    float: right;
-} 
-*/
+body {
+    font-family: 'Avenir Next Condensed', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+    
+}
+
+nav {
+    background-color: #FB8E61;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.burger {
+    font-size: 60px;
+    cursor: default;
+    margin-left: auto
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Hidden by default */
+    flex-direction:column;
+    background-color: #FB8E61;
+    position:fixed;
+    top: 50px;
+    right: 50px;
+    width: 300px;
+    border-radius: 50px;    
+}
+
+.menu li {
+    padding: 25px;
+    text-align: center;
+    
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 19px;
+}
+
+.menu li:hover {
+    background-color: #A3766A;
+    border-radius: 50px;
+}
+
+.menu.show {
+    display: flex; 
+}
