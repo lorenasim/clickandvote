@@ -1,6 +1,25 @@
-.nav_rechts{
-    font-size: 100px;
-    font-size: larger;
-    color:black;
+/*.nav_rechts{
+    display: flex;
+    color:aqua;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+}*/
+
+.menu_rechts{
+
+    font-size: 40px;
+    color: white;
+    background-color: #333; 
+    padding: 10px; 
     cursor: pointer;
+    width:100%;
+    text-align:right;
 }
+
+/*
+.menu_rechts {
+    float: right;
+} 
+*/
