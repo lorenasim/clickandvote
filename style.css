@@ -1,17 +1,3 @@
-@font-face {
-    font-family: 'Avenir Next Condensed'; 
-    src: url('fonts/avenir-next-condensed.woff2') format('woff2'),
-         url('fonts/avenir-next-condensed.woff') format('woff');
-    font-weight: normal;
-    font-style: normal
-}
-
-*{
+body {
     background-color: white;
-    font-family: 'Avenir Next Condensed', Arial, sans-serif;
-}
-
-.nav_rechts{
-    font-size: larger;
-   
 }
