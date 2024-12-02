@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktuelle Abstimmungen</title>
+    <style>
+        body {
+            font-family: 'Avenir Next Condensed', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; 
+        }
+
+        header {
+            background-color: #d39d7f; 
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px; 
+            width: 90%;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .abstimmung {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #eee; /* Trennlinie */
+        }
+
+        .abstimmung:last-of-type {
+            border-bottom: none; /* Entfernt die Trennlinie beim letzten Abschnitt */
+        }
+
+        .abstimmung h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            border-left: 4px solid #d39d7f;
+            padding-left: 0.5rem;
+        }
+
+        .abstimmung p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .trend {
+            margin-top: 1rem;
+        }
+
+        .trend .bar-container {
+            display: flex;
+            height: 25px;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #eee;
+        }
+
+        .trend .bar {
+            height: 100%;
+            text-align: center;
+            line-height: 25px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .bar.ja {
+            background-color: #8fd694; /* Grün für Ja */
+        }
+
+        .bar.nein {
+            background-color: #d6948f; /* Rot für Nein */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Click&Vote</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#votes">Abstimmungen</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="abstimmung">
+                <h2>Abstimmung 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="trend">
+                    <h3>Aktuelle Trends</h3>
+                    <div class="bar-container">
+                        <div class="bar ja" style="width: 70%;">70%</div>
+                        <div class="bar nein" style="width: 30%;">30%</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="abstimmung">
+                <h2>Abstimmung 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="trend">
+                    <h3>Aktuelle Trends</h3>
+                    <div class="bar-container">
+                        <div class="bar ja" style="width: 55%;">55%</div>
+                        <div class="bar nein" style="width: 45%;">45%</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
