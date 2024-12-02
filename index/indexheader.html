@@ -1,13 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>click&vote</title>
-    
-    <h1>Ganz easy unterwegs, egal wann & wo</h1>
-</head>
-<body>
-    
-</body>
-</html>
+<header>
+    <div class="logo">Click&Vote</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#votes">Abstimmungen</a></li>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Avenir+Next+Condensed:wght@400;700&display=swap');
+
+    header {
+        background-color: #d39d7f; /* Passend zur Farbpalette */
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Avenir Next Condensed', sans-serif; /* Schriftart */
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    header nav ul li a:hover {
+        text-decoration: underline;
+    }
+</style>
