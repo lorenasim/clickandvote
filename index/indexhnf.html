@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/css/stylehnf.css">
+<head>
+</head>
+
+<body>
+
+    <header>
+        <img src="/img/Logo.png" alt="Logo" class="logo">
+    </header>
+
+    <nav>
+        <title>Burger Icon</title>
+        <div class="burger" id="burger" onclick="toggleMenu()">&#9776;</div>
+        
+        <title>Dropdown Menu</title>
+        <ul class="menu" id="menu">
+            <li><a href="indexlandingpage.html">Home</a></li>
+            <li><a href="indexaktuelles.html">Abstimmungen & Wahlen</a></li>
+            <li><a href="indexüberuns.html">Über uns</a></li>
+            <li><a href="indexkontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // JavaScript to toggle the menu
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('show'); 
+        });
+
+        function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    }
+    </script>
+
+    <footer>
+        <img src="/img/Logofarbig.png" alt="Logo" class="Logofarbig">
+        <img src="/img/Figur-4.png" alt="Figur-4" class="Figur-4">
+    </footer>
+
+</body>
+</html>

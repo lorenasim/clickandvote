@@ -4,6 +4,12 @@
          url('path-to-font-file.woff') format('woff');
 }
 
+.logo {
+    position: absolute; /* Ermöglicht genaue Positionierung */
+    top: 10px; /* Abstand vom oberen Rand */
+    left: 10px; /* Abstand vom linken Rand */
+    height: 100px; /* Größe des Logos */
+}
 body {
     font-family: 'Avenir Next Condensed', Arial, sans-serif;
     font-weight: bold;
@@ -22,6 +28,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 20px;
 
 }
 
@@ -38,11 +45,11 @@ nav {
     display: none; /* Hidden by default */
     flex-direction:column;
     background-color: #FB8E61;
-    position:fixed;
+    position:absolute;
     top: 50px;
     right: 50px;
     width: 300px;
-    border-radius: 50px;    
+    border-radius: 40px;    
 }
 
 .menu li {
@@ -56,6 +63,7 @@ nav {
     color: white;
     display: block;
     font-size: 19px;
+    cursor: default;
 }
 
 .menu li:hover {
@@ -65,4 +73,31 @@ nav {
 
 .menu.show {
     display: flex; 
+}
+
+footer {
+    background-color: #A3766A;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    color: white; /* Textfarbe */
+    text-align: center; /* Zentriert Text und Inhalte */
+    padding: 130px; /* Innenabstand */
+    position: fixed; /* Fixiert den Footer unten */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Sorgt dafür, dass der Footer die gesamte Breite einnimmt */
+    display: flex; /* Ermöglicht flexibles Layout */
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+}
+
+.Logofarbig {
+    height: 80px; /* Größe des Logos */
+}
+
+.Figur-4 {
+    height: 80px; /* Größe des Logos */
 }

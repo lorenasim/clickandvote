@@ -1,0 +1,116 @@
+.options {
+    background-color: #FFA07A;
+    padding: 20px;
+    text-align: left;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.Person1{
+    width: ;
+    height: ;
+    background-color: ;
+    border-radius: ;
+    margin-right: ;
+}
+
+.Person2{
+    width: ;
+    height: ;
+    background-color: ;
+    border-radius: ;
+
+}
+.option p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.button.orange {
+    background-color: #FFA07A;
+}
+
+.button.blue {
+    background-color: #87CEFA;
+}
+
+.button.green {
+    background-color: #90EE90;
+}
+
+.info-box {
+    padding: 20px;
+}
+
+.info {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.orange-box {
+    background-color: #FFA07A;
+}
+
+
+
+.abstimmungen{
+    background-color:green
+    color:white;
+    border: 10px; 
+    border: 5px;
+    margin-bottom: px;
+}
+.über_uns{
+    background-color:green
+    color:white; 
+}
+.kontakt{
+
+}
+
+.buttons{
+    
+    margin: 70px;
+    border-radius: ;
+    border-top-left-radius: 
+    border-bottom-left-radius: 
+
+    
+    }
+
+body{
+    margin: 0px;
+}
+    
+/*.Über_uns
+.Kontakt
+.Leitmotto
+.Good_to_know
+.main
+    border:1px; 
+    bo
+p{
+    border: 5px;
+    border-color: blue;
+}*/
