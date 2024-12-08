@@ -101,3 +101,10 @@ footer {
 .Figur-4 {
     height: 80px; /* Größe des Logos */
 }
+
+.footertext {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
