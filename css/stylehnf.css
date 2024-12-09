@@ -76,56 +76,52 @@ nav {
 }
 
 footer {
-    background-color: #A3766A;
-    display: flex;
-    border-radius: 40px;
-    text-align: center; /* Zentriert Text und Inhalte */
-    padding: 110px; /* Innenabstand */
+    background-color: #A3766A; /* Hintergrundfarbe */
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: column; /* Inhalte vertikal anordnen */
+    align-items: center; /* Zentrierung horizontal */
+    justify-content: center; /* Zentrierung vertikal */
+    border-radius: 40px; /* Abgerundete Ecken */
+    padding: 90px; /* Innenabstand */
     position: fixed; /* Fixiert den Footer unten */
     bottom: 0;
     left: 0;
-    width: 80.6%; /* Sorgt dafür, dass der Footer die gesamte Breite einnimmt */
-    justify-content:center;
+    width: 84.3%; /* Breite des Footers */
 }
 
-.Logofarbig {
-    height: 100px; /* Größe der Figur */
+.footericons {
+    display: flex; /* Nebeneinander anordnen */
+    justify-content: center; /* Zentrieren */
+    align-items: center; /* Vertikale Ausrichtung */
+    gap: 20px; /* Abstand zwischen den Bildern */
 }
 
-.Figur-4 {
-    height: 100px; /* Größe der Figur */
+.footericons img {
+    height: 100px; /* Höhe der Bilder */
+    max-width: 150px; /* Begrenzung der Breite */
+    object-fit: contain; /* Verhindert Verzerrung */
 }
 
+/* Styling der Links-Liste */
 .footertext {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 20px
-    
-}
-
-.footertext li {
-    padding: 0px;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; 
-    
-    
-}
-
-.footertext li a {
-    color: white; /* Textfarbe */
-    cursor: default;
-    text-decoration: none;
-
-
-}
-
-.footertext li:hover {
-    cursor: default;
+    display: flex; /* Flexbox für Links */
+    justify-content: center; /* Zentriert die Links horizontal */
+    gap: 20px; /* Abstand zwischen den Links */
     list-style: none; /* Entfernt Aufzählungspunkte */
+    padding: 0; /* Kein Innenabstand */
+    margin: 0; /* Kein Außenabstand */
+    margin: 50px 0 0 0;
+}
 
-    
+/* Links-Styling */
+.footertext li a {
+    text-decoration: none; /* Entfernt Unterstreichung */
+    color: white; /* Weiße Schrift */
+    font-weight: bold; /* Fettschrift */
+    font-size: 20px; /* Schriftgröße */
+}
+
+/* Hover-Effekt für Links */
+.footertext li a:hover {
+    cursor: default; /* Zeigt Zeiger an */
 }
