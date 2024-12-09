@@ -18,7 +18,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     
-    
+
 }
 
 nav {
@@ -62,7 +62,7 @@ nav {
     text-decoration: none;
     color: white;
     display: block;
-    font-size: 19px;
+    font-size: 20px;
     cursor: default;
 }
 
@@ -77,34 +77,55 @@ nav {
 
 footer {
     background-color: #A3766A;
-    padding: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 50px;
-    color: white; /* Textfarbe */
+    border-radius: 40px;
     text-align: center; /* Zentriert Text und Inhalte */
-    padding: 130px; /* Innenabstand */
+    padding: 110px; /* Innenabstand */
     position: fixed; /* Fixiert den Footer unten */
     bottom: 0;
     left: 0;
-    width: 100%; /* Sorgt dafür, dass der Footer die gesamte Breite einnimmt */
-    display: flex; /* Ermöglicht flexibles Layout */
-    justify-content: center; /* Zentriert horizontal */
-    align-items: center; /* Zentriert vertikal */
+    width: 80.6%; /* Sorgt dafür, dass der Footer die gesamte Breite einnimmt */
+    justify-content:center;
 }
 
 .Logofarbig {
-    height: 80px; /* Größe des Logos */
+    height: 100px; /* Größe der Figur */
 }
 
 .Figur-4 {
-    height: 80px; /* Größe des Logos */
+    height: 100px; /* Größe der Figur */
 }
 
 .footertext {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 20px
+    
+}
+
+.footertext li {
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    
+    
+}
+
+.footertext li a {
+    color: white; /* Textfarbe */
+    cursor: default;
+    text-decoration: none;
+
+
+}
+
+.footertext li:hover {
+    cursor: default;
+    list-style: none; /* Entfernt Aufzählungspunkte */
+
+    
 }
