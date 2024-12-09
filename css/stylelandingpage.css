@@ -1,6 +1,7 @@
 .options {
     background-color: #FFA07A;
-    padding: 20px;
+    padding: 50px;
+    border-radius: 10%;
     text-align: left;
 }
 
@@ -10,19 +11,30 @@
     margin-bottom: 15px;
 }
 .Person1{
-    width: ;
-    height: ;
-    background-color: ;
-    border-radius: ;
-    margin-right: ;
+    width: 40px;          /* Größe der Bilder */
+    height: 40px;
+    border-radius: 50%;  /* Macht das Bild rund */
+    object-fit: cover;   /* Sorgt dafür, dass das Bild den Kreis ausfüllt */
+    margin-right: 10px;
+}
+.special-option .Person2 .Foto2 {
+    margin-top: 5px
 }
 
-.Person2{
-    width: ;
-    height: ;
-    background-color: ;
-    border-radius: ;
+.Person2.jpeg{
+    width: 40px;          /* Größe der Bilder */
+    height: 40px;
+    border-radius: 50%;  /* Macht das Bild rund */
+    object-fit: cover;   /* Sorgt dafür, dass das Bild den Kreis ausfüllt */
+    margin-right: 100px;  /* Abstand zum Text */
+}
 
+.Person3{
+    width: 40px;          
+    height: 40px;
+    border-radius: 50%;  
+    object-fit: cover;  
+    margin-right: 10px  
 }
 .option p {
     margin: 0;
@@ -70,23 +82,6 @@
 
 .orange-box {
     background-color: #FFA07A;
-}
-
-
-
-.abstimmungen{
-    background-color:green
-    color:white;
-    border: 10px; 
-    border: 5px;
-    margin-bottom: px;
-}
-.über_uns{
-    background-color:green
-    color:white; 
-}
-.kontakt{
-
 }
 
 .buttons{
