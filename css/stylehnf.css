@@ -18,7 +18,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     
-    
+
 }
 
 nav {
@@ -62,7 +62,7 @@ nav {
     text-decoration: none;
     color: white;
     display: block;
-    font-size: 19px;
+    font-size: 20px;
     cursor: default;
 }
 
@@ -76,28 +76,52 @@ nav {
 }
 
 footer {
-    background-color: #A3766A;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 50px;
-    color: white; /* Textfarbe */
-    text-align: center; /* Zentriert Text und Inhalte */
-    padding: 130px; /* Innenabstand */
+    background-color: #A3766A; /* Hintergrundfarbe */
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: column; /* Inhalte vertikal anordnen */
+    align-items: center; /* Zentrierung horizontal */
+    justify-content: center; /* Zentrierung vertikal */
+    border-radius: 40px; /* Abgerundete Ecken */
+    padding: 90px; /* Innenabstand */
     position: fixed; /* Fixiert den Footer unten */
     bottom: 0;
     left: 0;
-    width: 100%; /* Sorgt dafür, dass der Footer die gesamte Breite einnimmt */
-    display: flex; /* Ermöglicht flexibles Layout */
-    justify-content: center; /* Zentriert horizontal */
-    align-items: center; /* Zentriert vertikal */
+    width: 84.3%; /* Breite des Footers */
 }
 
-.Logofarbig {
-    height: 80px; /* Größe des Logos */
+.footericons {
+    display: flex; /* Nebeneinander anordnen */
+    justify-content: center; /* Zentrieren */
+    align-items: center; /* Vertikale Ausrichtung */
+    gap: 20px; /* Abstand zwischen den Bildern */
 }
 
-.Figur-4 {
-    height: 80px; /* Größe des Logos */
+.footericons img {
+    height: 100px; /* Höhe der Bilder */
+    max-width: 150px; /* Begrenzung der Breite */
+    object-fit: contain; /* Verhindert Verzerrung */
+}
+
+/* Styling der Links-Liste */
+.footertext {
+    display: flex; /* Flexbox für Links */
+    justify-content: center; /* Zentriert die Links horizontal */
+    gap: 20px; /* Abstand zwischen den Links */
+    list-style: none; /* Entfernt Aufzählungspunkte */
+    padding: 0; /* Kein Innenabstand */
+    margin: 0; /* Kein Außenabstand */
+    margin: 50px 0 0 0;
+}
+
+/* Links-Styling */
+.footertext li a {
+    text-decoration: none; /* Entfernt Unterstreichung */
+    color: white; /* Weiße Schrift */
+    font-weight: bold; /* Fettschrift */
+    font-size: 20px; /* Schriftgröße */
+}
+
+/* Hover-Effekt für Links */
+.footertext li a:hover {
+    cursor: default; /* Zeigt Zeiger an */
 }
