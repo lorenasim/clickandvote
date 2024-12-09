@@ -86,7 +86,7 @@ footer {
     position: fixed; /* Fixiert den Footer unten */
     bottom: 0;
     left: 0;
-    width: 84.3%; /* Breite des Footers */
+    width: 100%; /* Breite des Footers */
 }
 
 .footericons {
