@@ -10,6 +10,7 @@
     left: 10px; /* Abstand vom linken Rand */
     height: 100px; /* Größe des Logos */
 }
+
 body {
     font-family: 'Avenir Next Condensed', Arial, sans-serif;
     font-weight: bold;
@@ -17,8 +18,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    
-
 }
 
 nav {
@@ -68,7 +67,7 @@ nav {
 
 .menu li:hover {
     background-color: #A3766A;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 .menu.show {
@@ -92,8 +91,6 @@ footer {
 
 .footericons {
     display: flex; /* Nebeneinander anordnen */
-    justify-content: center; /* Zentrieren */
-    align-items: center; /* Vertikale Ausrichtung */
     gap: 20px; /* Abstand zwischen den Bildern */
 }
 
@@ -101,7 +98,6 @@ footer {
     height: 100px; /* Höhe der Bilder */
     max-width: 150px; /* Begrenzung der Breite */
     object-fit: contain; /* Verhindert Verzerrung */
-    justify-content: center; /* Zentrieren */
 }
 
 /* Styling der Links-Liste */

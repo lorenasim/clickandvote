@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,49 @@
 </head>
 <body>
     <header>
-    <h1>Ganz easy abstimmen - egal wann und wo</h1>
+        <img src="/img/Logo.png" alt="Logo" class="logo">
     </header>
     
-    <nav></nav>
+    <nav>
+        <title>Burger Icon</title>
+        <div class="burger" id="burger" onclick="toggleMenu()">&#9776;</div>
+        
+        <title>Dropdown Menu</title>
+        <ul class="menu" id="menu">
+            <li><a href="indexlandingpage.html">Home</a></li>
+            <li><a href="indexaktuelles.html">Abstimmungen & Wahlen</a></li>
+            <li><a href="indexüberuns.html">Über uns</a></li>
+            <li><a href="indexkontakt.html">Kontakt</a></li>
+        </ul>
+
+        <script>
+            // JavaScript to toggle the menu
+            const burger = document.getElementById('burger');
+            const menu = document.getElementById('menu');
+    
+            burger.addEventListener('click', () => {
+                menu.classList.toggle('show'); 
+            });
+    
+            function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+        </script>
+    </nav>
+
     <main></main>
-    <footer></footer>
+
+    <footer>
+        <div class="footericons">
+            <img src="/img/Logofarbig.png" alt="Logofarbig">
+            <img src="/img/Figur-4.png" alt="Figur-4">
+        </div>
+        <ul class="footertext" id="footertext">
+            <li><a href="#">IMPRESSUM</a></li>
+            <li><a href="#">DATENSCHUTZ</a></li>
+            <li><a href="#">AGB</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
