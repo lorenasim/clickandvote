@@ -28,7 +28,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 0 0 40px 40px;
 
 }
 
@@ -81,12 +81,13 @@ footer {
     flex-direction: column; /* Inhalte vertikal anordnen */
     align-items: center; /* Zentrierung horizontal */
     justify-content: center; /* Zentrierung vertikal */
-    border-radius: 40px; /* Abgerundete Ecken */
+    border-radius: 40px 40px 0 0;
     padding: 90px; /* Innenabstand */
     position: fixed; /* Fixiert den Footer unten */
     bottom: 0;
     left: 0;
-    width: 100%; /* Breite des Footers */
+    width: 100%;
+    box-sizing: border-box; /* Inklusive Padding */
 }
 
 .footericons {
@@ -100,6 +101,7 @@ footer {
     height: 100px; /* Höhe der Bilder */
     max-width: 150px; /* Begrenzung der Breite */
     object-fit: contain; /* Verhindert Verzerrung */
+    justify-content: center; /* Zentrieren */
 }
 
 /* Styling der Links-Liste */
