@@ -11,17 +11,20 @@
     max-width: flex;
     margin: o auto;
     background-color: #ffffff;
-    overflow: hidden;
+    overflow:visible;
+    
 }
 
 .header{
- background-color: #FF8A65;
+
+ background-color: #FB8E61;
  color: white;
  padding: 30px 20px;
  position: relative;
  text-align: left;
  border-bottom-left-radius: 40px;
  border-bottom-right-radius: 40px;
+
 }
 
 .h1{
@@ -29,80 +32,78 @@
     margin-left: 20%;
     margin-right: 10%;
 }
+
  
-.Download-Box{
-    background-color: ;
-
+.Download-box{
+    margin:50px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between; 
+    max-width: 700px;
 }
-.app-logo-section {
-    display: 100%;
-    padding: 200px;
-    background-color: #E0F0FF;
-    margin-top: 60%;
-    margin-bottom: 70%;   
-}
-.app-logo {
-    background-color: #90CAF9;
-    padding: 10px;
+  
+.Download-box-text{
+    background-color: #84b3cc;
     color: white;
-    font-weight: bold;
-    border-radius: 30px;
-    margin-right: 10px;
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 40px;
 
 }
-
-.download-text {
-    font-size: 14px;
-    color: #000000;
-}
-
-
-
 .image-section {
-    display:grid
+    display:grid;
     justify-content: center;
 }
 
 .image-section img {
     margin-top: 10%; 
     margin-bottom: 0%;
-    max-width: 200px; 
+    max-width: 300px; 
     object-fit: contain;
 }
 
-.Download{
-    color:black;
-    padding-left: 60%;
-}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Bild und Text untereinander anzeigen */
+    }
 
+    .text-container {
+        max-width: 100%;       /* Text nimmt die volle Breite ein */
+        margin-left: 0;
+        margin-top: 20px;      /* Abstand zum Bild */
+    }
 .info-box {
     padding: 20px;
     margin: 70px 0px;
     color: white;
 }
+}
 
 .orange-box {
-    background-color:#FF8A65;
+    background-color: #FB8E61;
     margin-right: 40%;
+    padding: 20px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
 }
 
 .orange-box2 {
-    background-color: #FF8A65;
+    background-color: #FB8E61;
+    margin-top: 40px;
     margin-left: 20%;
+    padding: 20px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
+   
 }
 
-
 .info-box h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    color: white;
 }
      
 .info-box p {
-    font-size: 14px;
+   color: white;
     line-height: 1.5;
 }
 
