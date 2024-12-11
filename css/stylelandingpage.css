@@ -30,6 +30,10 @@
     margin-right: 10%;
 }
  
+.Download-Box{
+    background-color: ;
+
+}
 .app-logo-section {
     display: 100%;
     padding: 200px;
@@ -55,18 +59,21 @@
 
 
 .image-section {
-    display: flex;
+    display:grid
     justify-content: center;
-    margin: 20px 0;
 }
 
 .image-section img {
     margin-top: 10%; 
-    margin-bottom: 10%;
-    max-width: 150px; 
+    margin-bottom: 0%;
+    max-width: 200px; 
     object-fit: contain;
 }
 
+.Download{
+    color:black;
+    padding-left: 60%;
+}
 
 .info-box {
     padding: 20px;
