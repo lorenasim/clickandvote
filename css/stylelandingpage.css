@@ -8,10 +8,10 @@
 }
 
 .container{
-    max-width: flex;
+    max-width: 100%;
     margin: o auto;
     background-color: #ffffff;
-    overflow:visible;
+    overflow: visible;
     
 }
 
@@ -19,19 +19,16 @@
 
  background-color: #FB8E61;
  color: white;
- padding: 30px 20px;
+ padding: 20px;
  position: relative;
  text-align: left;
  border-bottom-left-radius: 40px;
  border-bottom-right-radius: 40px;
- box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.1);
+ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 
 }
 
-.h1{
-    padding-left: 50%;
-    margin-left: 20%;
-    margin-right: 10%;
+h1{
 }
 
  
@@ -41,17 +38,17 @@
     display: flex;
     align-items: center;   
     justify-content: space-between; 
-    max-width: 700px;
+    max-width: 800px;
     
 }
   
 .Download-box-text{
     background-color: #84b3cc;
     color: white;
-    max-width: 200px;
+    max-width: flex;
     padding: 20px;
     border-radius: 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .image-section {
     display:grid;
@@ -61,7 +58,7 @@
 .image-section img {
     margin-top: 10%; 
     margin-bottom: 0%;
-    max-width: 300px; 
+    max-width: 400px; 
     object-fit: contain;
 }
 
@@ -71,7 +68,7 @@
     }
 
     .text-container {
-        max-width: 100%;      
+        max-width: 200%;      
         margin-left: 0;
         margin-top: 20px;     
     }
@@ -84,22 +81,24 @@
 
 .orange-box {
     background-color: #FB8E61;
+    margin-top: 40px;
     margin-right: 40%;
+    margin-bottom: 10%;
     padding: 20px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .orange-box2 {
-    background-color: #fb8261;
-    margin-top: 40px;
+    background-color:#FB8E61;
+    margin-top: 10%;
     margin-left: 20%;
     margin-bottom: 40%;
     padding: 20px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -111,6 +110,24 @@
 .info-box p {
    color: white;
     line-height: 1.5;
+}
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .Download-box-text {
+        padding: 10px;
+        font-size: 14px;  /* Kleinere Schrift für kleinere Bildschirme */
+    }
+
+    .image-section img {
+        max-width: 90%;   /* Kleinere Bilder für schmale Displays */
+    }
 }
 
 body{
