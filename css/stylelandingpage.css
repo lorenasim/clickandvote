@@ -24,6 +24,7 @@
  text-align: left;
  border-bottom-left-radius: 40px;
  border-bottom-right-radius: 40px;
+ box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.1);
 
 }
 
@@ -41,6 +42,7 @@
     align-items: center;   
     justify-content: space-between; 
     max-width: 700px;
+    
 }
   
 .Download-box-text{
@@ -49,7 +51,7 @@
     max-width: 200px;
     padding: 20px;
     border-radius: 40px;
-
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.1);
 }
 .image-section {
     display:grid;
@@ -65,13 +67,13 @@
 
 @media (max-width: 600px) {
     .container {
-        flex-direction: column; /* Bild und Text untereinander anzeigen */
+        flex-direction: column; 
     }
 
     .text-container {
-        max-width: 100%;       /* Text nimmt die volle Breite ein */
+        max-width: 100%;      
         margin-left: 0;
-        margin-top: 20px;      /* Abstand zum Bild */
+        margin-top: 20px;     
     }
 .info-box {
     padding: 20px;
@@ -86,20 +88,24 @@
     padding: 20px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1.1);
 }
 
 .orange-box2 {
-    background-color: #FB8E61;
+    background-color: #fb8261;
     margin-top: 40px;
     margin-left: 20%;
+    margin-bottom: 40%;
     padding: 20px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1.1);
+
 }
 
 .info-box h2 {
     color: white;
+    
 }
      
 .info-box p {
