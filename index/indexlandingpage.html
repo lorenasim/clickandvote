@@ -8,7 +8,39 @@
     <link rel="stylesheet" href="/css/stylelandingpage.css">
 </head>
 <body>
-   
+    <header>
+        <img src="/img/Logo.png" alt="Logo" class="logo">
+    </header>
+
+    <nav>
+        <title>Burger Icon</title>
+        <div class="burger" id="burger" onclick="toggleMenu()">&#9776;</div>
+        
+        <title>Dropdown Menu</title>
+        <ul class="menu" id="menu">
+            <li><a href="indexlandingpage.html">Home</a></li>
+            <li><a href="indexaktuelles.html">Abstimmungen & Wahlen</a></li>
+            <li><a href="indexüberuns.html">Über uns</a></li>
+            <li><a href="indexkontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // JavaScript to toggle the menu
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('show'); 
+        });
+
+        function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    }
+    </script>
+
+      
 
     <div class="container">
         <header class="header">
@@ -17,13 +49,17 @@
     </div>
 
   <main>
-    <div class="Download-box">
-        <div class="image-section">
-            <img src="/img/Person1.webp" alt="Illustration einer Person mit Handy">
-        </div>
-        <div class="Download-box-text">
-            <h2>Jetzt App runterladen!</h2>
-            <h4>Egal wann und wo!</br>Wird digital</h4> 
+    <div class="content">
+        <div class="download-section">
+            <div class="image-container">
+                <img src="/img/Person1.webp" alt="Person mit Handy">
+            </div>
+            <div class="download-box">
+                <p>Jetzt runterladen.<br>Mit einem Click alles hier.</p>
+            </div>
+            <div class="image-container">
+                <img src="/img/Person2.jpg" alt="Person mit Smartphone">
+            </div>
         </div>
     </div>        
 
@@ -40,7 +76,19 @@
             Warum dann nicht auch online Abstimmen?<br>
             Wir bringen dir Politik aufs Handy.</p>
     </section>
-
+    <footer>
+        <div class="footericons">
+            <img src="/img/Logofarbig.png" alt="Logofarbig">
+            <img src="/img/Figur-4.png" alt="Figur-4">
+            <img src="/img/Google_Play.png" alt="google">
+            <img src="/img/App-store-apple-logo.svg" alt="apple">
+        </div>
+        <ul class="footertext" id="footertext">
+            <li><a href="#">IMPRESSUM</a></li>
+            <li><a href="#">DATENSCHUTZ</a></li>
+            <li><a href="#">AGB</a></li>
+        </ul>
+    </footer>
     </main> 
     
 </body>

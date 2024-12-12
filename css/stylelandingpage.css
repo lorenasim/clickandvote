@@ -19,47 +19,71 @@
 
  background-color: #FB8E61;
  color: white;
- padding: 20px;
+ padding: 50px;
  position: relative;
  text-align: left;
  border-bottom-left-radius: 40px;
  border-bottom-right-radius: 40px;
- box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.8);
 
 }
 
 h1{
 }
 
+.content {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.download-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
  
 .Download-box{
-    margin:50px auto;
+    margin: 20px auto;
     padding: 20px;
     display: flex;
     align-items: center;   
     justify-content: space-between; 
-    max-width: 800px;
+    max-width: 400px;
     
 }
-  
-.Download-box-text{
+
+.download-box {
     background-color: #84b3cc;
     color: white;
-    max-width: flex;
     padding: 20px;
-    border-radius: 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-.image-section {
-    display:grid;
-    justify-content: center;
+    border-radius: 15px;
+    align-items: center;   
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+   
 }
 
-.image-section img {
-    margin-top: 10%; 
-    margin-bottom: 0%;
-    max-width: 400px; 
-    object-fit: contain;
+.image-container{
+    display: grid;                /* Grid-Layout */
+    grid-template-columns: 1fr 1fr 1fr; /* Zwei gleich große Spalten */
+    gap: 10px;                    /* Abstand zwischen den Bildern */
+    max-width: 20%;             /* Maximale Breite für den Container */
+    margin-bottom: 50px;
+}
+
+.image-container img {
+    width: 290px;
+    height: auto;
+    
+}
+
+.Person1.webp{
+    margin-right: 5%;
 }
 
 @media (max-width: 600px) {
@@ -72,33 +96,29 @@ h1{
         margin-left: 0;
         margin-top: 20px;     
     }
-.info-box {
-    padding: 20px;
-    margin: 70px 0px;
-    color: white;
-}
+
 }
 
 .orange-box {
     background-color: #FB8E61;
     margin-top: 40px;
     margin-right: 40%;
-    margin-bottom: 10%;
+    margin-bottom: 30px;
     padding: 20px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .orange-box2 {
     background-color:#FB8E61;
-    margin-top: 10%;
+    margin-top: 60px;
     margin-left: 20%;
-    margin-bottom: 40%;
+    margin-bottom: 500px;
     padding: 20px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 
 }
 
@@ -129,7 +149,131 @@ h1{
         max-width: 90%;   /* Kleinere Bilder für schmale Displays */
     }
 }
+@font-face {
+    font-family: 'Avenir Next Condensed';
+    src: url('path-to-font-file.woff2') format('woff2'),
+         url('path-to-font-file.woff') format('woff');
+}
 
+.logo {
+    position: absolute; /* Ermöglicht genaue Positionierung */
+    top: 10px; /* Abstand vom oberen Rand */
+    left: 10px; /* Abstand vom linken Rand */
+    height: 100px; /* Größe des Logos */
+}
+
+body {
+    font-family: 'Avenir Next Condensed', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+nav {
+    background-color: #FB8E61;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 0px 0px;
+
+}
+
+.burger {
+    font-size: 60px;
+    cursor: default;
+    margin-left: auto
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Hidden by default */
+    flex-direction:column;
+    background-color: #FB8E61;
+    position:absolute;
+    top: 50px;
+    right: 50px;
+    width: 300px;
+    border-radius: 40px;    
+}
+
+.menu li {
+    padding: 25px;
+    text-align: center;
+    
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+    cursor: default;
+}
+
+.menu li:hover {
+    background-color: #A3766A;
+    border-radius: 40px;
+}
+
+.menu.show {
+    display: flex; 
+}
+
+footer {
+    background-color: #A3766A; /* Hintergrundfarbe */
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: column; /* Inhalte vertikal anordnen */
+    align-items: center; /* Zentrierung horizontal */
+    justify-content: center; /* Zentrierung vertikal */
+    border-radius: 40px 40px 0 0;
+    padding: 90px; /* Innenabstand */
+    position: fixed; /* Fixiert den Footer unten */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; /* Inklusive Padding */
+}
+
+.footericons {
+    display: flex; /* Nebeneinander anordnen */
+    gap: 20px; /* Abstand zwischen den Bildern */
+}
+
+.footericons img {
+    height: 100px; /* Höhe der Bilder */
+    max-width: 150px; /* Begrenzung der Breite */
+    object-fit: contain; /* Verhindert Verzerrung */
+}
+
+/* Styling der Links-Liste */
+.footertext {
+    display: flex; /* Flexbox für Links */
+    justify-content: center; /* Zentriert die Links horizontal */
+    gap: 20px; /* Abstand zwischen den Links */
+    list-style: none; /* Entfernt Aufzählungspunkte */
+    padding: 0; /* Kein Innenabstand */
+    margin: 0; /* Kein Außenabstand */
+    margin: 50px 0 0 0;
+}
+
+/* Links-Styling */
+.footertext li a {
+    text-decoration: none; /* Entfernt Unterstreichung */
+    color: white; /* Weiße Schrift */
+    font-weight: bold; /* Fettschrift */
+    font-size: 20px; /* Schriftgröße */
+}
+
+/* Hover-Effekt für Links */
+.footertext li a:hover {
+    cursor: default; /* Zeigt Zeiger an */
+}
 body{
     margin: 0px;
 }
