@@ -28,9 +28,6 @@
 
 }
 
-h1{
-}
-
 .content {
     margin: 40px auto;
     max-width: 900px;
@@ -149,143 +146,9 @@ h1{
         max-width: 90%;   /* Kleinere Bilder für schmale Displays */
     }
 }
-@font-face {
-    font-family: 'Avenir Next Condensed';
-    src: url('path-to-font-file.woff2') format('woff2'),
-         url('path-to-font-file.woff') format('woff');
-}
 
-.logo {
-    position: absolute; /* Ermöglicht genaue Positionierung */
-    top: 10px; /* Abstand vom oberen Rand */
-    left: 10px; /* Abstand vom linken Rand */
-    height: 100px; /* Größe des Logos */
-}
-
-body {
-    font-family: 'Avenir Next Condensed', Arial, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
-nav {
-    background-color: #FB8E61;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 0 0 0px 0px;
-
-}
-
-.burger {
-    font-size: 60px;
-    cursor: default;
-    margin-left: auto
-}
-
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: none; /* Hidden by default */
-    flex-direction:column;
-    background-color: #FB8E61;
-    position:absolute;
-    top: 50px;
-    right: 50px;
-    width: 300px;
-    border-radius: 40px;    
-}
-
-.menu li {
-    padding: 25px;
-    text-align: center;
-    
-}
-
-.menu li a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-size: 20px;
-    cursor: default;
-}
-
-.menu li:hover {
-    background-color: #A3766A;
-    border-radius: 40px;
-}
-
-.menu.show {
-    display: flex; 
-}
-
-footer {
-    background-color: #A3766A; /* Hintergrundfarbe */
-    display: flex; /* Flexbox aktivieren */
-    flex-direction: column; /* Inhalte vertikal anordnen */
-    align-items: center; /* Zentrierung horizontal */
-    justify-content: center; /* Zentrierung vertikal */
-    border-radius: 40px 40px 0 0;
-    padding: 90px; /* Innenabstand */
-    position: fixed; /* Fixiert den Footer unten */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box; /* Inklusive Padding */
-}
-
-.footericons {
-    display: flex; /* Nebeneinander anordnen */
-    gap: 20px; /* Abstand zwischen den Bildern */
-}
-
-.footericons img {
-    height: 100px; /* Höhe der Bilder */
-    max-width: 150px; /* Begrenzung der Breite */
-    object-fit: contain; /* Verhindert Verzerrung */
-}
-
-/* Styling der Links-Liste */
-.footertext {
-    display: flex; /* Flexbox für Links */
-    justify-content: center; /* Zentriert die Links horizontal */
-    gap: 20px; /* Abstand zwischen den Links */
-    list-style: none; /* Entfernt Aufzählungspunkte */
-    padding: 0; /* Kein Innenabstand */
-    margin: 0; /* Kein Außenabstand */
-    margin: 50px 0 0 0;
-}
-
-/* Links-Styling */
-.footertext li a {
-    text-decoration: none; /* Entfernt Unterstreichung */
-    color: white; /* Weiße Schrift */
-    font-weight: bold; /* Fettschrift */
-    font-size: 20px; /* Schriftgröße */
-}
-
-/* Hover-Effekt für Links */
-.footertext li a:hover {
-    cursor: default; /* Zeigt Zeiger an */
-}
 body{
     margin: 0px;
 }
     
-/*.Über_uns
-.Kontakt
-.Leitmotto
-.Good_to_know
-.main
-    border:1px; 
-    bo
-p{
-    border: 5px;
-    border-color: blue;
-}*/
+

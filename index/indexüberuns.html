@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über uns - Click&Vote</title>
+    <style>
+        @font-face {
+            font-family: 'Avenir Next Condensed';
+            src: url('path-to-font-file.woff2') format('woff2'),
+                 url('path-to-font-file.woff') format('woff');
+        }
+
+        body {
+            font-family: 'Avenir Next Condensed', Arial, sans-serif;
+            font-weight: bold;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #FB8E61;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0 0 40px 40px;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #A3766A;
+        }
+
+        .burger {
+            font-size: 30px;
+            cursor: pointer;
+            display: none;
+        }
+
+        nav.mobile {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background-color: #FB8E61;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav.mobile.show {
+            display: flex;
+        }
+
+        .content {
+            margin: 20px auto;
+            max-width: 1000px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 70px; /* Abstand zwischen den Sections */
+        }
+
+        .content h1 {
+            color: #FB8E61;
+            margin-bottom: 50px;
+        }
+
+        /* Styling für die Boxen bei "Unsere Werte" */
+        .values-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .values-grid div {
+            width: 250px;
+            padding: 20px;
+            background-color: #FB8E61;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styling für die Boxen bei "Unser Team" */
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .team-grid div {
+            width: 100px;
+            height: 50px;
+            padding: 20px;
+            background-color: #FB8E61;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .values-grid div, .team-grid div {
+                flex: 1 1 100%; /* Boxen untereinander auf kleinen Bildschirmen */
+            }
+
+            nav {
+                display: none;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            nav.mobile {
+                display: none;
+            }
+        }
+
+        footer {
+            background-color: #A3766A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 40px 40px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Click&Vote</div>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aktuelles.html">Aktuelles</a>
+            <a href="ueber-uns.html">Über uns</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <nav id="menu" class="mobile">
+            <a href="index.html">Home</a>
+            <a href="aktuelles.html">Aktuelles</a>
+            <a href="ueber-uns.html">Über uns</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <section class="values">
+            <h1>Unsere Werte</h1>
+            <div class="values-grid">
+                <div><strong>Sicherheit:</strong><br>Schutz sensibler Daten durch umfassende Verschlüsselung.</div>
+                <div><strong>Zukunftsorientierung:</strong><br>Ständige Verbesserung und Anpassung an moderne Standards.</div>
+                <div><strong>Neutralität:</strong><br>Bereitstellung objektiver Informationen ohne Beeinflussung.</div>
+                <div><strong>Zuverlässigkeit:</strong><br>Wahrheitsgetreue Informationen und verlässliche Stimmabgabe.</div>
+            </div>
+        </section>
+
+        <section class="team">
+            <h1>Unser Team</h1>
+            <div class="team-grid">
+                <div><strong>Ismael</strong><br>Marketing</div>
+                <div><strong>Lorena</strong><br>Creative Director</div>
+                <div><strong>Juls</strong><br>Journalismus</div>
+                <div><strong>Aurora</strong><br>Administration</div>
+                <div><strong>Can</strong><br>IT</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Click&Vote. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
