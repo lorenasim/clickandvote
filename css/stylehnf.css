@@ -10,6 +10,7 @@
     left: 10px; /* Abstand vom linken Rand */
     height: 100px; /* Größe des Logos */
 }
+
 body {
     font-family: 'Avenir Next Condensed', Arial, sans-serif;
     font-weight: bold;
@@ -17,8 +18,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    
-
 }
 
 nav {
@@ -28,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 0 0 40px 40px;
 
 }
 
@@ -68,7 +67,7 @@ nav {
 
 .menu li:hover {
     background-color: #A3766A;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 .menu.show {
@@ -81,18 +80,17 @@ footer {
     flex-direction: column; /* Inhalte vertikal anordnen */
     align-items: center; /* Zentrierung horizontal */
     justify-content: center; /* Zentrierung vertikal */
-    border-radius: 40px; /* Abgerundete Ecken */
+    border-radius: 40px 40px 0 0;
     padding: 90px; /* Innenabstand */
     position: fixed; /* Fixiert den Footer unten */
     bottom: 0;
     left: 0;
-    width: 84.3%; /* Breite des Footers */
+    width: 100%;
+    box-sizing: border-box; /* Inklusive Padding */
 }
 
 .footericons {
     display: flex; /* Nebeneinander anordnen */
-    justify-content: center; /* Zentrieren */
-    align-items: center; /* Vertikale Ausrichtung */
     gap: 20px; /* Abstand zwischen den Bildern */
 }
 

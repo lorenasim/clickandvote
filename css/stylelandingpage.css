@@ -1,116 +1,177 @@
-.options {
-    background-color: #FFA07A;
-    padding: 20px;
-    text-align: left;
-}
-
-.option {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-.Person1{
-    width: ;
-    height: ;
-    background-color: ;
-    border-radius: ;
-    margin-right: ;
-}
-
-.Person2{
-    width: ;
-    height: ;
-    background-color: ;
-    border-radius: ;
-
-}
-.option p {
+*{
     margin: 0;
-    font-size: 14px;
-    color: #ffffff;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Avenir Next Condensed', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;;
 }
 
-.buttons {
-    margin: 20px 0;
+.container{
+    max-width: 100%;
+    margin: o auto;
+    background-color: #ffffff;
+    overflow: visible;
+    
 }
 
-.button {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ffffff;
-}
-.button.orange {
-    background-color: #FFA07A;
+.header{
+
+ background-color: #FB8E61;
+ color: white;
+ padding: 50px;
+ position: relative;
+ text-align: left;
+ border-bottom-left-radius: 40px;
+ border-bottom-right-radius: 40px;
+ box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+
 }
 
-.button.blue {
-    background-color: #87CEFA;
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-items: center; 
 }
 
-.button.green {
-    background-color: #90EE90;
+.image-container{
+ 
 }
 
-.info-box {
+img{
+    max-width: 100px;
+    height: auto;
+}
+
+.download-box{
+    background-color: #84b3cc;
+    color: white;
     padding: 20px;
+    border-radius: 15px;
+      
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    
+}
+   /* margin: 40px auto;
+    max-width: 900px;
+    padding: 0 20px;*/
+
+
+    
+
+/* 
+.Download-box{
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between; 
+    max-width: 400px;
+    
+}
+/*
+
+/*.download-box {
+    background-color: #84b3cc;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;   
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+   
 }
 
-.info {
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #ffffff;
+.image-container{
+    display: grid;                # Grid-Layout 
+    grid-template-rows:100px 300px ;
+    grid-template: ;
+    gap: 0px;                     #Abstand zwischen den Bildern 
+    max-width: 100%;              #Maximale Breite für den Container 
+    margin-bottom: 50px;
 }
+/*
+
+/*
+@media (max-width: 1231px) {
+    .header {
+        padding: 10px;
+    }
+
+    .download-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .orange-box,
+    .orange-box2 {
+        max-width: 100%;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .download-box {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+}
+*/
 
 .orange-box {
-    background-color: #FFA07A;
+    background-color: #FB8E61;
+    margin-top: 40px;
+    margin-right: 40%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
-
-
-.abstimmungen{
-    background-color:green
-    color:white;
-    border: 10px; 
-    border: 5px;
-    margin-bottom: px;
-}
-.über_uns{
-    background-color:green
-    color:white; 
-}
-.kontakt{
+.orange-box2 {
+    background-color:#FB8E61;
+    margin-top: 60px;
+    margin-left: 20%;
+    margin-bottom: 500px;
+    padding: 20px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 
 }
 
-.buttons{
+.info-box h2 {
+    color: white;
     
-    margin: 70px;
-    border-radius: ;
-    border-top-left-radius: 
-    border-bottom-left-radius: 
+}
+     
+.info-box p {
+   color: white;
+    line-height: 1.5;
+}
 
-    
-    }
 
 body{
     margin: 0px;
 }
     
-/*.Über_uns
-.Kontakt
-.Leitmotto
-.Good_to_know
-.main
-    border:1px; 
-    bo
-p{
-    border: 5px;
-    border-color: blue;
-}*/
+
