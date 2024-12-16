@@ -18,7 +18,7 @@ body{
 .submit-box {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #007BFF;
+    background-color: #84B3CC;
     color: white;
     font-size: 18px;
     text-align: center;
@@ -28,5 +28,28 @@ body{
 }
 
 .submit-box:hover {
-    background-color: #0056b3;
+    background-color: #7AC7B5;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #FB8E61;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    color: black; /* Falls Eingabetext schwarz sein soll */
+    background-color: white; /* Eingabefelder abheben */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center; /* Zentriert den Text */
+    margin: 20px 0; /* Optional: Abstand ober- und unterhalb */
 }
