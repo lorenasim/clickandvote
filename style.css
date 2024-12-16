@@ -122,3 +122,15 @@ footer {
 .footertext li a:hover {
     cursor: default; 
 }
+
+
+@media (max-width: 1231px) {
+    .header {
+        padding: 10px;
+    }
+
+@media (max-width: 480px) {
+        .header {
+            padding: 20px;
+            font-size: 18px;
+        }
