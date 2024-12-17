@@ -100,6 +100,8 @@ img{
         align-items: center;
     }
 
+    
+
     .orange-box,
     .orange-box2 {
         max-width: 100%;
@@ -124,6 +126,7 @@ img{
     .image-container img {
         max-width: 100%;
     }
+    
 }
 
 
