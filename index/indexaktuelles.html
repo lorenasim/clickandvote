@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aktuelle Abstimmungen</title>
+    <title>Abstimmungsresultat</title>
     <style>
         @font-face {
             font-family: 'Avenir Next Condensed';
@@ -26,85 +26,23 @@
             line-height: 1.6;
         }
 
-        /* Header */
-        header {
-            background-color: #FB8E61;
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-radius: 0 0 40px 40px;
-            position: relative;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        nav {
-            display: flex;
-            gap: 15px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-size: 1rem;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #A3766A;
-        }
-
-        .burger {
-            font-size: 30px;
-            cursor: pointer;
-            display: none;
-        }
-
-        nav.mobile {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background-color: #FB8E61;
-            border-radius: 10px;
-            width: 200px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        nav.mobile.show {
-            display: flex;
-        }
-
-        /* Main Content */
         .container {
             max-width: 800px;
             width: 90%;
             margin: 2rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .box {
             background-color: white;
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .abstimmung {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid #eee;
-        }
-
-        .abstimmung:last-of-type {
-            border-bottom: none;
-        }
-
-        .abstimmung h2 {
+        .box h2 {
             font-size: 1.5rem;
             color: #333;
             margin-bottom: 0.5rem;
@@ -112,7 +50,7 @@
             padding-left: 0.5rem;
         }
 
-        .abstimmung p {
+        .box p {
             color: #FB8E61;
             line-height: 1.6;
         }
@@ -145,81 +83,66 @@
         .bar.nein {
             background-color: #aa0b00;
         }
-
-        @media (max-width: 768px) {
-            nav {
-                display: none;
-            }
-
-            .burger {
-                display: block;
-            }
-        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Click&Vote</div>
-        <div class="burger" onclick="toggleMenu()">☰</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="aktuelles.html">Aktuelles</a>
-            <a href="ueber-uns.html">Über uns</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-        <nav id="menu" class="mobile">
-            <a href="index.html">Home</a>
-            <a href="aktuelles.html">Aktuelles</a>
-            <a href="ueber-uns.html">Über uns</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-    </header>
-
     <div class="container">
-        <main>
-            <section class="abstimmung">
-                <h2>Reform berufliche Vorsorge</h2>
-                <p>Eidg. Vorlage: Reform der beruflichen Vorsorge</p>
-                <div class="trend">
-                    <h3>Aktuelle Trends</h3>
-                    <div class="bar-container">
-                        <div class="bar ja" style="width: 70%;">32.9%</div>
-                        <div class="bar nein" style="width: 30%;">67.1%</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="abstimmung">
-                <h2>Biodiversitäts-Initiative</h2>
-                <p>Eidg. Vorlage: Volksinitiative «Für die Zukunft unserer Natur und Landschaft»</p>
-                <div class="trend">
-                    <h3>Aktuelle Trends</h3>
-                    <div class="bar-container">
-                        <div class="bar ja" style="width: 55%;">37%</div>
-                        <div class="bar nein" style="width: 45%;">63%</div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <section class="abstimmung">
-            <h2>Änderung des Bundesgesetzes über die Krankenversicherung (KVG)</h2>
-            <p>Einheitliche Finanzierung der Leistungen</p>
+        <div class="box">
+            <h2>Reform berufliche Vorsorge</h2>
+            <p>Volksabstimmung vom 22.09.2024</p>
+            <p>Eidg. Vorlage: Reform der beruflichen Vorsorge</p>
             <div class="trend">
-                <h3>Aktuelle Trends</h3>
+                <h3>Abstimmungsresultat</h3>
                 <div class="bar-container">
-                    <div class="bar ja" style="width: 60%;">53.3%</div>
-                    <div class="bar nein" style="width: 40%;">46.7%</div>
+                    <div class="bar ja" style="width: 70%;">32.88% Ja</div>
+                    <div class="bar nein" style="width: 30%;">67.12% Nein</div>
                 </div>
             </div>
-        </section>
-    </div>
+            <h5>Stimmbeteiligung 45.04%</h5>
+        </div>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('show');
-        }
-    </script>
+        <div class="box">
+            <h2>Biodiversitäts-Initiative</h2>
+            <p>Volksabstimmung vom 22.09.2024</p>
+            <p>Eidg. Vorlage: Volksinitiative «Für die Zukunft unserer Natur und Landschaft»</p>
+            <div class="trend">
+                <h3>Abstimmungsresultat</h3>
+                <div class="bar-container">
+                    <div class="bar ja" style="width: 55%;">37% Ja</div>
+                    <div class="bar nein" style="width: 45%;">63% Nein</div>
+                </div>
+            </div>
+            <h5>Stimmbeteiligung 45.19%</h5>
+        </div>
+
+        <div class="box">
+            <h2>Änderung des Bundesgesetzes über die Krankenversicherung (KVG)</h2>
+            <p>Volksabstimmung vom 24.11.2024</p>
+            <p>Einheitliche Finanzierung der Leistungen</p>
+            <div class="trend">
+                <h3>Abstimmungsresultat</h3>
+                <div class="bar-container">
+                    <div class="bar ja" style="width: 60%;">53.3% Ja</div>
+                    <div class="bar nein" style="width: 40%;">46.7% Nein</div>
+                </div>
+            </div>
+            <h5>Stimmbeteiligung 45.05%</h5>
+        </div>
+
+        <!-- Letzte Box -->
+        <div class="box">
+            <h2>Bundesbeschluss über den Ausbauschritt 2023 für die Nationalstrassen</h2>
+            <p>Volksabstimmung vom 24.11.2024</p>
+            <p>Eidg. Vorlage: Nationalstrassenausbau</p>
+            <div class="trend">
+                <h3>Abstimmungsresultat</h3>
+                <div class="bar-container">
+                    <div class="bar ja" style="width: 47%;">47.30% Ja</div>
+                    <div class="bar nein" style="width: 53%;">52.70% Nein</div>
+                </div>
+            </div>
+            <h5>Stimmbeteiligung 45.05%</h5>
+        </div>
+    </div>
 </body>
 </html>
