@@ -56,11 +56,11 @@ img{
 }
 
 .image-container{
-    display: grid;                # Grid-Layout 
+    display: grid;                /*Grid-Layout*/ 
     grid-template-rows:100px 300px ;
-    grid-template: ;
-    gap: 0px;                     #Abstand zwischen den Bildern 
-    max-width: 100%;              #Maximale Breite für den Container 
+    grid-template: 0;
+    gap: 0px;                     /*Abstand zwischen den Bildern */
+    max-width: 100%;              /*Maximale Breite für den Container */
     margin-bottom: 50px;
 }
    /* margin: 40px auto;
