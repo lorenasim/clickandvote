@@ -95,23 +95,12 @@ footer {
 .footericons {
     display: flex; 
     gap: 20px; 
+
 }
 
-.footericons img {
-    max-width: 130px; 
+.footericons img { 
     object-fit: contain; 
-}
-
-.footerapps {
-    display: flex;               
-    flex-direction: column;      
-    align-items: flex-end;         
-    width: 50%; 
-} 
-
-.footerapps img {
-    max-width: 130px;
-    object-fit: contain; 
+    width: 100%; /* Skaliert das Bild proportional */
 }
 
 .footertext {
