@@ -134,3 +134,33 @@ img{
 body{
     margin: 0px;
 }
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-box,
+    .orange-box,
+    .orange-box2 {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .download-box,
+    .orange-box,
+    .orange-box2 {
+        padding: 10px;
+    }
+}
