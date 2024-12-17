@@ -83,13 +83,14 @@ footer {
     align-items: center; 
     justify-content: center; 
     border-radius: 40px 40px 0 0;
-    padding: 90px; 
-    position: fixed; 
+    padding: 20px; 
+    position:fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     box-sizing: border-box; 
 }
+
 
 .footericons {
     display: flex; 
@@ -97,8 +98,19 @@ footer {
 }
 
 .footericons img {
-    height: 100px; 
-    max-width: 150px; 
+    max-width: 130px; 
+    object-fit: contain; 
+}
+
+.footerapps {
+    display: flex;               
+    flex-direction: column;      
+    align-items: flex-end;         
+    width: 50%; 
+} 
+
+.footerapps img {
+    max-width: 130px;
     object-fit: contain; 
 }
 
@@ -122,3 +134,84 @@ footer {
 .footertext li a:hover {
     cursor: default; 
 }
+
+
+@media (max-width: 1231px) {
+    /* Nav */
+    .logo {
+        top: 8px; 
+        left: 8px;
+    }
+
+    nav {
+        padding: 12px; /* Weniger Padding für schmalere Screens */
+    }
+
+    .menu {
+        width: 250px; 
+    }
+
+    .menu li {
+        padding: 20px; /* Weniger Platz zwischen Menüoptionen */
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px; /* Reduziertes Padding */
+    }
+
+    .footericons img {
+        height: 90px;
+        max-width: 90px;
+    }
+
+    .footertext li a {
+        font-size: 18px; /* Konsistente Lesbarkeit */
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    /* Nav */
+    .logo {
+        height: 70px; 
+    }
+
+    nav {
+        padding: 15px; 
+    }
+
+    .burger {
+        font-size: 40px; 
+    }
+
+
+    .menu li {
+        padding: 10px; 
+    }
+
+    .menu li a {
+        font-size: 14px; 
+    }
+
+    /* Footer */
+
+    .footericons img {
+        max-width: 70px;
+        margin-top: 20px;
+    }
+
+
+    .footertext {
+        gap: 10px; 
+        margin-bottom: 40px;
+        margin-top: 10px;
+
+    }
+
+    .footertext li a {
+        font-size: 14px; 
+    }
+}
+
