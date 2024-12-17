@@ -1,54 +1,136 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:'Avenir Next Condensed', Arial, sans-serif;
     font-weight: bold;
-    font-style: normal;
+    font-style: normal;;
 }
 
+.container{
+    max-width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 500px;
+   
+}
 
+.header{
+
+ background-color: #FB8E61;
+ color: white;
+ padding: 40px;
+ position: relative;
+ text-align: center;
+ border-radius: 40px;
+ box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-items: center; 
+}
+.image-container{
+    max-width: 5px;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.image-container-1{
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+
+.image-container-2{
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.image-container-3{
+    max-width: 100px;
+    height: auto;
+    position: relative;
+    text-align: center;
+    margin-left: 100px;
+    
+}
+
+.image-container{
+    display: grid;
+    grid-template-rows: 10px 30px;
+    grid-template: max-content;
+    max-width: 100%;  
+    height: auto; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+img{
+  width: 100%; 
+  height:auto; 
+  object-fit: cover;
+  object-position: 10%
+}
+
+.download-box{
+    background-color: #FB8E61;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px ;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    
+}
 
 
 .orange-box {
-    margin-right: auto;
+    background-color: #FB8E61;
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .orange-box2 {
-    margin-left: auto;
+    background-color:#FB8E61;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .download-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info-box {
-        max-width: 100%;
-    }
-
-    .orange-box,
-    .orange-box2 {
-        margin: 0;
-    }
+.info-box h2 {
+    color: white;
+    padding: 20px;
+}
+     
+.info-box p {
+   color: white;
+    line-height: 1.5; 
+    padding: 10px; 
 }
 
-@media (max-width: 480px) {
-    .header h1 {
-        font-size: 1.5em;
-    }
 
-    .header h2 {
-        font-size: 1.2em;
-    }
-
-    .image-container img {
-        width: 120px;
-    }
-
-    .download-box {
-        padding: 15px;
-    }
+body{
+    margin: 0px;
 }
