@@ -185,10 +185,10 @@ body{
     } 
 
      h1 { 
-        font-size: 1.5rem; # Verwendet relative Maßeinheiten 
+        font-size: 1.5rem; 
      } 
 
-     p { font-size: 1rem; # Verwendet relative Maßeinheiten  
+     p { font-size: 1rem; 
     } 
 } 
 
