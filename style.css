@@ -83,8 +83,8 @@ footer {
     align-items: center; 
     justify-content: center; 
     border-radius: 40px 40px 0 0;
-    padding: 20px; 
-    position:fixed;
+    padding: 30px; 
+    position:relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -100,7 +100,8 @@ footer {
 
 .footericons img { 
     object-fit: contain; 
-    width: 100%; /* Skaliert das Bild proportional */
+    height: 100px;
+    max-width: 100px;
 }
 
 .footertext {
@@ -133,7 +134,7 @@ footer {
     }
 
     nav {
-        padding: 12px; /* Weniger Padding für schmalere Screens */
+        padding: 12px; 
     }
 
     .menu {
@@ -141,12 +142,13 @@ footer {
     }
 
     .menu li {
-        padding: 20px; /* Weniger Platz zwischen Menüoptionen */
+        padding: 20px; 
     }
 
     /* Footer */
     footer {
-        padding: 30px; /* Reduziertes Padding */
+        padding: 40px; 
+        position:static;
     }
 
     .footericons img {
@@ -155,7 +157,7 @@ footer {
     }
 
     .footertext li a {
-        font-size: 18px; /* Konsistente Lesbarkeit */
+        font-size: 18px; 
     }
 }
 
@@ -187,20 +189,94 @@ footer {
     /* Footer */
 
     .footericons img {
-        max-width: 70px;
-        margin-top: 20px;
+        max-width: 65px;
+        gap: 3px;
+        margin-top: 0px;
     }
-
 
     .footertext {
         gap: 10px; 
-        margin-bottom: 40px;
+        margin-bottom: 5px;
         margin-top: 10px;
 
     }
 
     .footertext li a {
-        font-size: 14px; 
+        font-size: 14px;
     }
 }
 
+/* Abstimmungen und Wahlen */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Avenir Next Condensed', Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #FB8E61;
+    padding-left: 0.5rem;
+}
+
+.box p {
+    color: #FB8E61;
+    line-height: 1.6;
+}
+
+.trend {
+    margin-top: 1rem;
+}
+
+.trend .bar-container {
+    display: flex;
+    height: 25px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.trend .bar {
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.bar.ja {
+    background-color: #109019;
+}
+
+.bar.nein {
+    background-color: #aa0b00;
+}
