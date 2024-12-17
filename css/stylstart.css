@@ -192,35 +192,3 @@ body{
     } 
 } 
 
-/*
-
- Für Bildschirme kleiner als 480px 
- @media (max-width: 480px) { 
-    .container1 { 
-        padding: 15px;
-        margin: 30px auto; 
-    }
-    .download-box,
-    .orange-box, { 
-        padding: 10px;
-        margin: 30px 10px;
-    }
-
-    .orange-box2 {
-        padding: 10px;
-        margin: 30px 20px;
-
-    }
-
-     .image-container-3{
-        margin-right: 100px;
-    }
-
-    h1 {
-         font-size: 1.2rem;
-         } 
-    p { 
-        font-size: 0.9rem;
-    }
-}
-/*
