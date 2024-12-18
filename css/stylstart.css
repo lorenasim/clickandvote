@@ -53,7 +53,6 @@
     margin-left: 100px;   
 }
 
-
 img{
   width: 100%; 
   height:auto; 
@@ -116,6 +115,7 @@ body{
 @media (max-width: 1231px) {
     .header {
         padding: 10px;
+        margin-top: 10%;
     }
 
     .download-section {
@@ -129,19 +129,31 @@ body{
         align-items: center;
     }
 
+    .image-container-1{
+        max-width: 400px;
+        height: auto;
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
     .orange-box,
     .orange-box2 {
         max-width: 100%;
+        margin: 10px;
     }
 
     .content {
-        padding: 0 10px;
+        padding: 5 10px;
     }
 }
 
 @media (max-width: 480px) {
     .header {
         padding: 20px;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+
         font-size: 18px;
     }
 
@@ -150,6 +162,8 @@ body{
         font-size: 14px;
     }
 
+    .download-box,
+    .orange-box2,
     .orange-box2 {
         padding: 15px;
         margin: 30px 30px;
