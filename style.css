@@ -253,7 +253,7 @@ footer {
     margin-left: 100px;   
 }
 
-img{
+.image-container-1 img{ 
   width: 100%; 
   height:auto; 
   object-fit: cover;
