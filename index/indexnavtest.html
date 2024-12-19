@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            
+            
+        }
+
+        nav {
+            background-color: #FB8E61;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+        }
+
+        .burger {
+            font-size: 60px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none; /* Hidden by default */
+            flex-direction:column;
+            background-color: #FB8E61;
+            position:fixed;
+            top: 50px;
+            right: 50px;
+            width: 300px;
+            border-radius: 50px;
+            
+        }
+
+        .menu li {
+            padding: 50px;
+            text-align: center;
+            
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .menu li:hover {
+            background-color: #A3766A;
+            border-radius: 50px;
+        }
+
+        .menu.show {
+            display: flex; /* Show the menu */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- Burger Icon -->
+        <div class="burger" id="burger">&#9776;</div>
+        
+        <!-- Dropdown Menu -->
+        <ul class="menu" id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Abstimmungen & Wahlen</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // JavaScript to toggle the menu
+        const burger = document.getElementById('burger');
+        const menu = document.getElementById('menu');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('show'); // Toggle the "show" class
+        });
+    </script>
+</body>
+</html>
