@@ -207,7 +207,6 @@ footer {
 }
 
 /* Home */
-
 /* Allgemeine Stile */
 body {
     font-family: 'Arial', sans-serif;
@@ -225,8 +224,6 @@ h1, h2 {
 h1 {
     font-size: 2rem;
     text-align: center;
-    color: #FB8E61;
-    margin: 40px auto 20px;
 }
 
 h2 {
@@ -243,13 +240,38 @@ p {
     margin: 0 20px;
 }
 
+/* Hero-Bereich */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.hero-section .text-box {
+    background-color: #FB8E61;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 550px;
+    color: #ffffff;
+    flex: 1;
+}
+
+.hero-section img {
+    max-width: 250px; /* 30% größer als vorher */
+    height: flex;
+}
+
 /* Vision-Bereich */
 .vision-section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
-    max-width: 800px;
+    max-width: 1000px; /* An die Breite angepasst */
     margin: 40px auto;
 }
 
@@ -266,7 +288,7 @@ p {
     height: auto;
 }
 
-/* Nebeneinanderliegende Boxen */
+/* Dual Box-Bereich */
 .dual-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -305,6 +327,7 @@ p {
     max-width: 100px;
     height: auto;
 }
+
 /* Abstimmungen und Wahlen */
 
 * {
