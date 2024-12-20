@@ -240,39 +240,30 @@ p {
     margin: 0 20px;
 }
 
-/* Hero-Bereich */
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    max-width: 1000px;
-    margin: 40px auto;
+/* Größe der Figuren */
+.hero-image {
+    max-width: 120px; /* Größe an die Vision-Figur angepasst */
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
-.hero-section .text-box {
-    background-color: #FB8E61;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 550px;
-    color: #ffffff;
-    flex: 1;
-}
-
-.hero-section img {
-    max-width: 250px; /* 30% größer als vorher */
-    height: flex;
+.vision-image {
+    max-width: 120px; /* Standardgröße der Vision-Figur */
+    height: auto;
+    margin: 0 auto;
 }
 
 /* Vision-Bereich */
 .vision-section {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
-    max-width: 1000px; /* An die Breite angepasst */
+    max-width: 1000px;
     margin: 40px auto;
+    padding: 20px;
+    flex-wrap: wrap; /* Flexbox für kleinere Bildschirme */
 }
 
 .vision-section .text-box {
@@ -281,14 +272,10 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 600px;
+    flex: 1 1 100%; /* Auf 100% Breite bei kleinen Bildschirmen */
 }
 
-.vision-section img {
-    max-width: 150px;
-    height: auto;
-}
-
-/* Dual Box-Bereich */
+/* Nebeneinanderliegende Boxen */
 .dual-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -328,6 +315,16 @@ p {
     height: auto;
 }
 
+/* Responsive Anpassungen für kleinere Bildschirme */
+@media only screen and (max-width: 768px) {
+    .vision-section {
+        flex-direction: column;
+    }
+
+    .vision-image {
+        margin-bottom: 15px;
+    }
+}
 /* Abstimmungen und Wahlen */
 
 * {
